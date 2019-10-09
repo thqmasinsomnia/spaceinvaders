@@ -2,13 +2,13 @@ import pygame
 from pygame.sprite import Sprite
 
 
-class AlienB(Sprite):
+class AlienC(Sprite):
     def __init__(self, ai_settings, screen):
-        super(AlienB, self).__init__()
+        super(AlienC, self).__init__()
         self.screen = screen
         self.ai_settings = ai_settings
 
-        self.image = pygame.image.load('images/alien2a.png')
+        self.image = pygame.image.load('images/alien3a.png')
         self.rect = self.image.get_rect()
         # Start each new alien near the top left of the screen.
         self.rect.x = self.rect.width
@@ -36,12 +36,10 @@ class AlienB(Sprite):
             self.cnt = self.cnt + 1
         elif self.swap and self.cnt == 50:
             self.cnt = 1
-            self.image = pygame.image.load('images/alien2b.png')
+            self.image = pygame.image.load('images/alien3b.png')
             self.swap = False
         elif not self.swap and self.cnt == 50:
             self.cnt = 1
-            self.image = pygame.image.load('images/alien2a.png')
+            self.image = pygame.image.load('images/alien3a.png')
             self.swap = True
-
-
 
