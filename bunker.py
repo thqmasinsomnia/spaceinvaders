@@ -1,20 +1,32 @@
 import pygame
 from pygame.sprite import Sprite
+from pygame.sprite import Group
+from block import Block
 
 
 class Bunker(Sprite):
-    def __init__(self, row, column,  ai_settings, screen):
+    def __init__(self, screen):
         Sprite.__init__(self)
-        self.height = ai_settings.bunker_size
-        self.width = ai_settings.bunker_size
-        self.color = 0, 60, 0
-        self.image = self.width, self.height
-        self.image = self.color
-        self.row = row
-        self.column = column
+        self.screen = screen
+        self.bunker = Group()
 
-    def update(self, keys, *args):
-        self.screen.blit()
+    def create_bunker(self, x, y):
+        x_hold = x
+        cnt = 0
+        for ehh in range(201):
+         if ehh != 0:
+                block = Block(x, y, self.screen)
+                if cnt < 20:
+                    x = x + 4
+                else:
+                    cnt = 0
+                    x = x_hold
+
+                if ehh % 20 == 0:
+                    y = y + 4
+
+                self.bunker.add(block)
+                cnt = cnt + 1
 
     def draw_bunker(self):
-        pygame.draw.rect(self.screen, self.color, self.rect)
+        self.bunker.draw(self.screen)

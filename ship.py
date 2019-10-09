@@ -31,7 +31,6 @@ class Ship(Sprite):
             self.center -= self.ai_settings.ship_speed_factor
         self.rect.centerx = self.center
 
-
     def blitme(self):
         """Draw the ship at its current location."""
         self.screen.blit(self.image, self.rect)

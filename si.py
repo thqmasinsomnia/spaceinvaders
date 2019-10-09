@@ -1,7 +1,6 @@
 import pygame
 import sys
 from pygame.sprite import Group
-from pygame import mixer
 
 from settings import Settings
 from ship import Ship
@@ -10,7 +9,8 @@ import game_functions as gf
 from game_stats import GameStats
 from button import Button
 from scoreboard import Scoreboard
-from highscore import Highscore
+from high_score import High_score
+from bunker import Bunker
 
 
 def run_game():
@@ -27,35 +27,35 @@ def run_game():
 
     pygame.mixer.music.load('sounds/gamemusic.ogg')
     pygame.mixer.music.play(-1)
-    highscore = Highscore(screen)
+    high_score = High_score(screen)
 
-    print(highscore.get_lowest_score())
+    print(high_score.get_lowest_score())
 
-    endintro = False
-    openhighscore = False
-    while endintro == False:
+    end_intro = False
+    open_high_score = False
+    while not end_intro:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    endintro = True
+                    end_intro = True
                 elif event.key == pygame.K_s:
-                    endintro = True
-                    openhighscore = True
+                    end_intro = True
+                    open_high_score = True
 
-    if openhighscore:
-        highscore.show_scores()
+    if open_high_score:
+        high_score.show_scores()
 
         pygame.display.flip()
 
-    while openhighscore == True:
+    while open_high_score:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    openhighscore = False
+                    open_high_score = False
 
     # Create an instance to store game statistics.
     stats = GameStats(ai_settings)
@@ -80,9 +80,21 @@ def run_game():
 
     gf.create_ufo(ai_settings, screen, ufos)
 
+    bunk = Group()
+
+    bunk1 = Bunker(screen)
+    bunk1.create_bunker(50, 600)
+    bunk.add(bunk1)
+    bunk2 = Bunker(screen)
+    bunk2.create_bunker(250, 600)
+    bunk.add(bunk2)
+    bunk3 = Bunker(screen)
+    bunk3.create_bunker(450, 600)
+    bunk.add(bunk3)
+
+
+
     while True:
-
-
 
         gf.check_events(ai_settings, screen, stats, sb, play_button, ship, aliens, aliensb, aliensc, bullets,
                         alienbullets)
@@ -107,6 +119,8 @@ def run_game():
         bullets.update()
         alienbullets.update()
 
+        gf.check_bunker_collisions(bullets, alienbullets, bunk)
+
         # Get rid of bullets that have disappeared.
         for bullet in bullets.copy():
             if bullet.rect.bottom <= 0:
@@ -116,8 +130,9 @@ def run_game():
             if bullet.rect.y > 800:
                 alienbullets.remove(bullet)
 
+
         gf.update_screen(ai_settings, screen, stats, sb, ship, aliens, aliensb, aliensc, bullets, play_button,
-                         alienbullets, ufos)
+                         alienbullets, ufos, bunk)
 
 
 run_game()
