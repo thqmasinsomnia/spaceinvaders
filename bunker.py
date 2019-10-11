@@ -14,7 +14,7 @@ class Bunker(Sprite):
         x_hold = x
         cnt = 0
         for ehh in range(201):
-         if ehh != 0:
+            if ehh != 0:
                 block = Block(x, y, self.screen)
                 if cnt < 20:
                     x = x + 4

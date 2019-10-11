@@ -10,5 +10,6 @@ class Block(Sprite):
         self.rect.x = x
         self.rect.y = y
 
+
     def blitme(self):
         self.screen.blit(self.image, self.rect)

@@ -92,7 +92,7 @@ def run_game():
     bunk3.create_bunker(450, 600)
     bunk.add(bunk3)
 
-
+    TC = pygame.mixer.Sound("sounds/TC.ogg")
 
     while True:
 
@@ -100,7 +100,7 @@ def run_game():
                         alienbullets)
         if stats.game_active:
             ship.update()
-            gf.update_bullets(ai_settings, screen, stats, sb, ship, aliens, aliensb, aliensc, bullets)
+            gf.update_bullets(ai_settings, screen, stats, sb, ship, aliens, aliensb, aliensc, bullets, alienbullets)
             gf.update_alien_bullets(ai_settings, screen, stats, sb, ship, alienbullets)
             gf.maybe_ufo(ai_settings, screen, ufos)
             gf.update_ufo(ufos)
@@ -112,8 +112,10 @@ def run_game():
             if ufos.__len__() > 0:
                 for ufo in ufos.copy():
                     ufo.move()
+                    pygame.mixer.Sound.play(TC)
                     if ufo.rect.x > 600:
                         ufos.remove(ufo)
+                        pygame.mixer.Sound.stop(TC)
                         print("its gone")
 
         bullets.update()
