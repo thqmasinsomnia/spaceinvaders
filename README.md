@@ -19,6 +19,7 @@ This project was built on top of the "Alien Invasion" code from the book <i>Pyth
 A great and highly suggested read for getting into Python.
 https://nostarch.com/pythoncrashcourse2e
 <br><br>
+<br><br>
 <img align="right" width="400" src="images/screen3.PNG">
 
 <br>
