@@ -3,7 +3,6 @@
 ![](images/logo.png)
 ##
 
-
 ##
 <img align="left" width="350" src="images/screen1.PNG">
 <p align=center><strong>SPACE INVADERS WRITTEN IN BEAUTIFUL PYTHON</p></strong>
@@ -20,14 +19,13 @@ This project was built on top of the "Alien Invasion" code from the book <i>Pyth
 A great and highly suggested read for getting into Python.
 https://nostarch.com/pythoncrashcourse2e
 
-PROGRAMS USED:<br>
-Pycharm CE<br>
-Adobe Photoshop CC (layout title screen)<br>
-Piskel (draw sprites)<br>
-Audacity (editing and converting audio samples)<br>
-
-
 <img align="right" width="350" src="images/screen3.PNG">
+
+## Programs Used
+- Pycharm CE
+- Adobe Photoshop CC (layout title screen)
+- Piskel (draw sprites
+- Audacity (editing and converting audio samples)
 
 ## Requeriments
 - [Python](https://www.python.org/) (duh)
@@ -69,4 +67,4 @@ Music sampeled from the track "Time Trial" off <i>Browser</i> by Jonwayne
 <br><b> LEGAL: SPACE INVADERS IS OWNED BY NAMCO
 <br>PLEASE DON'T SUE ME I JUST WANT A JOB</b>
 
-<h1>👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀</h1>
+<h1>👽🚀</h1>
