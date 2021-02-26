@@ -23,6 +23,7 @@ https://nostarch.com/pythoncrashcourse2e
 
 <br>
 <br>
+<br>
 
 ## Programs Used
 - Pycharm CE
@@ -43,8 +44,6 @@ https://nostarch.com/pythoncrashcourse2e
 - KEYS KEYS - TYPE YOUR NAME TO FLEX YOUR HIGH SCORE
 
 
-<br>
-<br>
 <br>
 <br>
 <br>
