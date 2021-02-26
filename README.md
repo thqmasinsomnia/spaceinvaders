@@ -71,4 +71,4 @@ Music sampeled from the track "Time Trial" off <i>Browser</i> by Jonwayne
 <br><b> LEGAL: SPACE INVADERS IS OWNED BY NAMCO
 <br>PLEASE DON'T SUE ME I JUST WANT A JOB</b>
 
-<h1>👽🚀</h1>
+<h1>👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽🚀👽</h1>
