@@ -24,7 +24,7 @@ https://nostarch.com/pythoncrashcourse2e
 
 <br>
 <br>
-<br>
+
 
 ## Programs Used
 - Pycharm CE
@@ -42,7 +42,6 @@ https://nostarch.com/pythoncrashcourse2e
 
 - ARROW KEYS (L/R) - DODGE DODGE
 
-- KEYS KEYS - TYPE YOUR NAME TO FLEX YOUR HIGH SCORE
 
 
 <br>
