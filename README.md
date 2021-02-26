@@ -28,7 +28,7 @@ https://nostarch.com/pythoncrashcourse2e
 - Piskel (draw sprites)
 - Audacity (editing and converting audio samples)
 
-## Requeriments
+## Requirements
 - [Python](https://www.python.org/) (duh)
 - [Pygame](https://www.pygame.org/)
 
