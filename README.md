@@ -30,7 +30,7 @@ https://nostarch.com/pythoncrashcourse2e
 ## Programs Used
 - Pycharm CE
 - Adobe Photoshop CC (layout title screen)
-- Piskel (draw sprites
+- Piskel (draw sprites)
 - Audacity (editing and converting audio samples)
 
 ## Requeriments
