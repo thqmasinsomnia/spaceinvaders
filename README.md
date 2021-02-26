@@ -21,6 +21,9 @@ https://nostarch.com/pythoncrashcourse2e
 
 <img align="right" width="350" src="images/screen3.PNG">
 
+<br>
+<br>
+
 ## Programs Used
 - Pycharm CE
 - Adobe Photoshop CC (layout title screen)
