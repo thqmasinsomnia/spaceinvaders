@@ -18,8 +18,8 @@ Written using the Pygame Moduel.
 This project was built on top of the "Alien Invasion" code from the book <i>Python Crash Course, 2nd Edition</i> by Eric Matthes.
 A great and highly suggested read for getting into Python.
 https://nostarch.com/pythoncrashcourse2e
-
-<img align="right" width="350" src="images/screen3.PNG">
+<br><br>
+<img align="right" width="400" src="images/screen3.PNG">
 
 <br>
 <br>
